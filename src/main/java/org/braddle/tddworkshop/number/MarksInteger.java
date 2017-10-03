@@ -4,17 +4,17 @@ public interface MarksInteger {
 
     int getNative();
 
-    boolean isEqual(MarksInteger);
+    boolean isEqual(int MarksInteger);
 
-    boolean isGreaterThan(MarksInteger);
+    boolean isGreaterThan(int MarksInteger);
 
-    boolean isLessThan(MarksInteger);
+    boolean isLessThan(int MarksInteger);
 
-    MarksInteger add(MarksInteger);
+    MarksInteger add(int MarksInteger);
 
-    MarksInteger minus(MarksInteger);
+    MarksInteger minus(int MarksInteger);
 
-    MarksInteger divideBy(MarksInteger);
+    MarksInteger divideBy(int MarksInteger);
 
-    MarksInteger multiply(MarksInteger);
+    MarksInteger multiply(int MarksInteger);
 }
