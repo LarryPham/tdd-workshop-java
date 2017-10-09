@@ -41,7 +41,10 @@ BookRepository and review repository
 
 ### Task 5 - Mocking with Spies
 
-TODO
+Implement the [customerRegister](src/main/java/org/braddle/tddworkshop/register/customerRegister.java) interface that 
+will allow customers to register there details. If their details are valid they should be save and send an email. You 
+need to use a Spy test double to ensure that the email sending operation is complete only when a persons details are 
+save.
 
 ### Task 6 - Mocking with Fakes
 
