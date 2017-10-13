@@ -10,11 +10,11 @@ public class Book {
 
     private String author;
 
-    private float price;
+    private double price;
 
     private int yearPublished;
 
-    public Book(String isbn, String ean, String title, String author, float price, int yearPublished) {
+    public Book(String isbn, String ean, String title, String author, double price, int yearPublished) {
         this.isbn = isbn;
         this.ean = ean;
         this.title = title;
@@ -39,7 +39,7 @@ public class Book {
         return author;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
