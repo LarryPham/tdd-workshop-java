@@ -5,36 +5,42 @@ import java.util.ArrayList;
 public class Basket {
 
     private ArrayList<BasketItem> basketItems;
+    private String basketID;
+    private double cashTotal;
+    private int totalQuantity;
 
-    public Basket() {
+    public Basket(String basketID, double cashTotal, int totalQuantity) {
+        this.basketID = basketID;
+        this.cashTotal = cashTotal;
+        this.totalQuantity = totalQuantity;
         basketItems = new ArrayList<BasketItem>();
     }
 
-    public void add(BasketItem basketItem) {
+    public void addBasketItem(BasketItem basketItem) {
         basketItems.add(basketItem);
     }
 
-    public int getTotal() {
-        int total = 0;
-
-        for (BasketItem basketItem : basketItems) {
-            total += basketItem.getPrice();
-        }
-
-        return total;
+    public ArrayList<BasketItem> getBasketItems() {
+        return basketItems;
     }
 
-    public boolean isEmpty() {
-        return basketItems.isEmpty();
+    public String getBasketID() {
+        return basketID;
     }
 
-    public int getNumberOfItems() {
-        int total = 0;
+    public double getCashTotal() {
+        return cashTotal;
+    }
 
-        for (BasketItem basketItem : basketItems) {
-            total += basketItem.getQuantity();
-        }
+    public void setCashTotal(double cashTotal) {
+        this.cashTotal = cashTotal;
+    }
 
-        return total;
+    public int getTotalQuantity() {
+        return totalQuantity;
+    }
+
+    public void setTotalQuantity(int totalQuantity) {
+        this.totalQuantity = totalQuantity;
     }
 }

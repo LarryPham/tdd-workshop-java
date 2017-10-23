@@ -11,10 +11,14 @@ public class BasketItem {
     }
 
     public int getPrice() {
-        return product.getPrice() * quantity;
+        return product.getPrice();
     }
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public String getEAN() {
+        return product.getEan();
     }
 }
